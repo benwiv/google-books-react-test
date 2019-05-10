@@ -12,7 +12,7 @@ class Home extends Component {
   state = {
     books: [],
     q: "",
-    message: "Search For A Book To Begin!"
+    message: "you gotta search before you can find :D"
   };
 
   handleInputChange = event => {
@@ -69,7 +69,7 @@ class Home extends Component {
             </Jumbotron>
           </Col>
           <Col size="md-12">
-            <Card title="Book Search" icon="far fa-book">
+            <Card title="here's where you find a tasty book" icon="far fa-book">
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
@@ -80,7 +80,7 @@ class Home extends Component {
         </Row>
         <Row>
           <Col size="md-12">
-            <Card title="Results">
+            <Card title="books that match">
               {this.state.books.length ? (
                 <List>
                   {this.state.books.map(book => (

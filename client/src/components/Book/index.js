@@ -22,7 +22,7 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
       </Row>
       <Row>
         <Col size="md-6">
-          <p className="font-italic small">Written by {authors}</p>
+          <p className="font-italic small">thought up and put to paper by {authors}</p>
         </Col>
       </Row>
       <Row>
